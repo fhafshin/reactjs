@@ -1,4 +1,9 @@
-const Head = (props: any) => {
+interface Props extends React.HTMLProps<HTMLDivElement> {
+  productId: number;
+  productName: string;
+}
+import React from "react";
+const Head: React.FC<Props> = (props: Props) => {
   const { productId, productName, children } = props;
   return (
     <>
