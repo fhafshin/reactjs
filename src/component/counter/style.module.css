@@ -1,0 +1,46 @@
+.container{
+
+    width: 50rem;
+    height: 50rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 25px 1px #0000001a;
+    display: grid;
+place-items: center;
+    margin-top: 2rem;
+    margin-left: 1.5rem;
+
+}
+
+.container_wrapper{
+    display: flex;
+}
+
+.container_wrapper button{
+   background: #535bf2;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 1rem;
+    border:0;
+}
+
+.container_wrapper span{
+ font-size: 2rem;
+    margin:0 1rem;
+}
+
+.container_wrapper_red{
+    display: flex;
+}
+
+.container_wrapper_red button{
+    background: #ff5500;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 1rem;
+    border:0;
+}
+
+.container_wrapper_red span{
+    font-size: 2rem;
+    margin:0 1rem;
+}
