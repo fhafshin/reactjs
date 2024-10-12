@@ -7,10 +7,13 @@ import "./App.css";
 // import { useState } from "react";
 // import Counter from "./component/counter";
 // import Test from "./component/test";
-import Index from "./component/counters";
-import counter from "./component/counter";
+// import Index from "./component/counters";
+// import counter from "./component/counter";
+// import RandomName from "./component/randomName";
+import SendData from "./component/sendData";
+
 const App = () => {
-  const counters = [5, 5, 6, 4, 5, 7];
+  // const counters = [5, 5, 6, 4, 5, 7];
   // const onInputChange = (value) => {
   //   setCounter(value);
   //   console.log(value);
@@ -36,14 +39,17 @@ const App = () => {
 
       {/*<Counter defaultValue={5} />*/}
       {/*<Test />*/}
-      {counters.map((item) => {
-        return (
-          <div className="container" key={item}>
-            {" "}
-            <Index defaultValue={item} />
-          </div>
-        );
-      })}
+      {/*{counters.map((item) => {*/}
+      {/*  return (*/}
+      {/*    <div className="container" key={item}>*/}
+      {/*      {" "}*/}
+      {/*      <Index defaultValue={item} />*/}
+      {/*    </div>*/}
+      {/*  );*/}
+      {/*})}*/}
+
+      {/*<RandomName />*/}
+      <SendData />
     </div>
   );
 };

@@ -8,6 +8,10 @@ const Counter = (props: Props) => {
     return counter > 4
       ? styles.container_wrapper
       : styles.container_wrapper_red;
+
+
+
+
   };
   const [counter, setCounter] = useState(props.defaultValue);
   const handlePlusClick = () => {
@@ -20,7 +24,11 @@ const Counter = (props: Props) => {
     <div className={styles.container}>
       <div className={getStyle()}>
         {counter === 0 ? null : <button onClick={handleMinesClick}>-</button>}
-        <span style={{ color: "red" }}>{counter === 0 ? "zero" : counter}</span>
+        <span style={{ color: "red" }}>{counter === 0 ? "zero" : counter}
+
+
+
+        </span>
         <button onClick={handlePlusClick}>+</button>
       </div>
     </div>
