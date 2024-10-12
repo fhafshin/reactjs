@@ -11,6 +11,10 @@ import "./App.css";
 // import counter from "./component/counter";
 // import RandomName from "./component/randomName";
 import SendData from "./component/sendData";
+import { Routes, Route } from "react-router-dom";
+import AboutUs from "./pages/about-us";
+import Navbar from "./component/layouts/Navbar";
+import User from "./component/user";
 
 const App = () => {
   // const counters = [5, 5, 6, 4, 5, 7];
@@ -49,7 +53,12 @@ const App = () => {
       {/*})}*/}
 
       {/*<RandomName />*/}
-      <SendData />
+      <Navbar />
+      <Routes>
+        <Route path="/" Component={SendData}></Route>
+        <Route path="/about-us" Component={AboutUs}></Route>
+        <Route path="/user/:id" Component={User}></Route>
+      </Routes>
     </div>
   );
 };
