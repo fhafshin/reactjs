@@ -15,6 +15,12 @@ import { Routes, Route } from "react-router-dom";
 import AboutUs from "./pages/about-us";
 import Navbar from "./component/layouts/Navbar";
 import User from "./component/user";
+import NotFound from "./pages/error/not-found.tsx";
+import Users from "./pages/users";
+import loadable from "./pages/loadable.tsx";
+import Login from "./pages/login";
+import Todos from "./pages/todos";
+import Counter from "./pages/counter";
 
 const App = () => {
   // const counters = [5, 5, 6, 4, 5, 7];
@@ -58,6 +64,11 @@ const App = () => {
         <Route path="/" Component={SendData}></Route>
         <Route path="/about-us" Component={AboutUs}></Route>
         <Route path="/user/:id" Component={User}></Route>
+        <Route path="*" Component={NotFound}></Route>
+        <Route path="/users" Component={loadable}></Route>
+        <Route path="/login" Component={Login}></Route>
+        <Route path="/todos" Component={Todos}></Route>
+        <Route path="/counter" Component={Counter}></Route>
       </Routes>
     </div>
   );
